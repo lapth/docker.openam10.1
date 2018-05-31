@@ -8,5 +8,11 @@
 
 
 Sample:
-
+=> Run with alpine
 docker run --rm -p 8080:8080 lapth/openam10.1:v1
+=> Run with slim
+docker run --rm -p 8080:8080 lapth/openam10.1:v2
+=> Run with built-in: tomcat and oracle jdk
+docker run --rm -p 8080:8080 lapth/openam10.1:v3
+
+=> All these version can bring tomcat up but can not config openam, because missing OS config steps.
